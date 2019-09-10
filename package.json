@@ -1,0 +1,42 @@
+{
+  "name": "recess-build",
+  "version": "4.4.7",
+  "description": "Simple and powerful build system",
+  "main": "index.js",
+  "author": "egorgl",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "compile": "coffee -bco ./lib ./src",
+    "watch": "coffee -wbco ./lib ./src"
+  },
+  "bin": {
+    "recess": "./bin/recess.js"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.5",
+    "chalk": "^2.3.0",
+    "coffeescript": "^2.2.4",
+    "commander": "^2.12.2",
+    "deep-assign": "^2.0.0",
+    "file-type": "^7.4.0",
+    "find-up": "^2.1.0",
+    "fs-extra": "^5.0.0",
+    "gaze": "^1.1.2",
+    "globby": "^7.1.1",
+    "ignore": "^3.3.7",
+    "log-update": "^2.3.0",
+    "micromatch": "^3.1.4",
+    "relative": "^3.0.2",
+    "resolve": "^1.5.0",
+    "stat-mode": "^0.2.2",
+    "stream-to-array": "^2.3.0",
+    "uuid": "^3.1.0",
+    "window-size": "^1.1.0",
+    "wrap-ansi": "^3.0.1"
+  },
+  "devDependencies": {
+    "gulp-uglify-es": "^1.0.0",
+    "recess-uglify": "^2.2.3"
+  }
+}
